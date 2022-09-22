@@ -1,12 +1,22 @@
 'use strict';
 
+const { response } = require('express');
 const express = require('express');
 const app = express();
 const logger = require('./middlewares/logger.js');
 const validator = require('./middlewares/validator.js');
 
 app.use(logger);
-app.get('/person', validator, (request, response) => {
+
+app.get('/', (request, response) => {
+  try {
+    response.status(200).send('I am the proof of life');
+  } catch (e) {
+    console.log(e);
+  }
+});
+
+app.get('/cars', validator, (request, response) => {
   response.json({
     name: request.query.name
   });
