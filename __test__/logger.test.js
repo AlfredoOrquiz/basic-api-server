@@ -1,6 +1,6 @@
 'use strict';
 
-const logger = require('../lib/middlewares/logger.js');
+const logger = require('../src/middlewares/logger.js');
 
 describe('testing logger middleware', () => {
   test('should log something when invoked', () => {
