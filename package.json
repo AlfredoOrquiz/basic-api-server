@@ -1,0 +1,26 @@
+{
+  "name": "basic-api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfredoOrquiz/basic-api-server.git"
+  },
+  "author": "Alfredo Orquiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfredoOrquiz/basic-api-server/issues"
+  },
+  "homepage": "https://github.com/AlfredoOrquiz/basic-api-server#readme",
+  "dependencies": {
+    "pg": "^8.8.0",
+    "sequelize": "^6.23.0",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^5.1.1"
+  }
+}
